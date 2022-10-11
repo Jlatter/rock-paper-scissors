@@ -21,6 +21,8 @@ var element2 = document.getElementById("paper");
 var element3 = document.getElementById("scissors");
 function playround(player_lower, comp_choice_variable){
     comp_choice_variable = getComputerChoice();
+    if(playerWins<5){document.getElementById("victory").innerHTML=""};
+    if(computerWins<5){document.getElementById("victory").innerHTML=""};
     if(player_lower === comp_choice_variable){
         document.getElementById("player").innerHTML = "player wins " + playerWins;
         document.getElementById("computer").innerHTML = "computer wins " + computerWins;
