@@ -1,4 +1,4 @@
-//Make a function for computer to choose random number out of 1 2 and 3 then assign the number to rock paper, scissors
+//Make a function for computer to choose random number out of 1 2 and 3 then assign the number to rock paper, scissors 
 function getComputerChoice(){ 
     let x = Math.floor((Math.random() * 3) + 1);
     if (x === 1){
